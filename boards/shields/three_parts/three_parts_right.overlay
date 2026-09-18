@@ -1,0 +1,21 @@
+#include "three_parts.dtsi"
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-direct";
+        wakeup-source;
+
+        input-gpios
+            = <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            ;
+    };
+};
+
+&matrix_transform0 {
+    row-offset = <2>;
+};
+
+&physical_layout_three_parts {
+    kscan = <&kscan0>;
+};
+
