@@ -3165,8 +3165,8 @@ static const struct display_layout_block LAYOUT_PERIPHERAL_IDLE_BLOCKS[1] = {
   ],
   "shieldId": "corne",
   "displayAssignments": {
-    "corne_left": "central",
-    "corne_right": "peripheral"
+    "three-parts-dongle": "central",
+    "three-parts-left": "peripheral"
   },
   "layerNames": [
     "DEFAULT",
